@@ -1,8 +1,5 @@
 <!--Top  Body Image Bar-->
 
-<head>
-  <link rel="stylesheet" type="text/css" href="home.component.css">
-</head>
 
 
 <div id="home" class="container-fluid">
@@ -11,23 +8,26 @@
   <div class="container-fluid">
     <div class="row">
       <!--Buiding Up Side Bar-->
-      <div id="sidebar" class="col-lg-2 spl" >
+      <div id="sidebar" class="col-lg-2" style="width:100%;background-color:rgb(16, 16, 46)">
 
-        <div id="sidebar_div">
+        <div style="margin-top:150px; ">
           <!--Hidden Content visible on Hover-->
 
 
-          <div class="container-fluid top_content"  href="#" >
+          <div class="container-fluid" id="content" href="#" style="width:100%;margin-top:1px;border-top-right-radius:25px">
             <span id="title">
               <i class="fas fa-bolt"></i>&nbsp;Electrial Components </span>
+
             <!--Hidden Content visible on Hover-->
             <div id="hoverbar">
+
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-lg-4">
                     <h5>Cooler & Ventilation Devices
                     </h5>
                     <ul>
+
                       <li> Air Coolers
                       </li>
                       <li> Ceiling Fans
@@ -46,6 +46,9 @@
                       </li>
                       <li> Blue Star Water Coolers
                       </li>
+
+
+
                     </ul>
                     <h5>Biometric & Access Control Devices
                     </h5>
@@ -103,7 +106,7 @@
             </div>
 
           </div>
-          <div class="container-fluid content"  href="#" >
+          <div class="container-fluid" id="content" href="#" style="width:100%;margin-top:1px;">
             <span id="title">
               <i class="fas fa-industry"></i>&nbsp;Industrial Machines </span>
 
@@ -284,7 +287,7 @@
 
 
 
-          <div class="container-fluid content" href="#" >
+          <div class="container-fluid" id="content" href="#" style="width:100%;margin-top:1px;">
             <span id="title">
               <i class="fas fa-industry"></i>&nbsp;Industrial Machines </span>
 
@@ -484,7 +487,7 @@
             </div>
 
           </div>
-          <div class="container-fluid content"  href="#" >
+          <div class="container-fluid" id="content" href="#" style="width:100%;margin-top:1px;">
             <span id="title">
               <i class="fas fa-industry"></i>&nbsp;Industrial Machines </span>
 
@@ -685,7 +688,7 @@
 
           </div>
 
-          <div class="container-fluid content"  href="#" >
+          <div class="container-fluid" id="content" href="#" style="width:100%;margin-top:1px;">
             <span id="title">
               <i class="fas fa-industry"></i>&nbsp;Industrial Machines </span>
 
@@ -906,12 +909,12 @@
 
 
 
-      <div class="col-lg-10" id="card_cont" >
+      <div class="col-lg-10   " style="margin-top:100px;">
 
-        <a id="card_a">
+        <a style="color:white; width:100%;height:400px">
           <i class="fas fa-angle-left fa-3x prev " (click)="left()"></i>
 
-          <img class="card-img-top" src="{{top[index]}}" id="card_img" alt="Card image cap">
+          <img class="card-img-top" src="{{top[index]}}" style="height:400px;width:100%;" alt="Card image cap">
           <i class="fas fa-angle-right fa-3x next " (click)="left()"></i>
 
         </a>
@@ -928,13 +931,13 @@
   <div class="container-fluid">
     <div class="row">
       <!--Buiding Up Side Bar-->
-      <div class="col-lg-2 sidebar_ex" id="sidebar">
+      <div class="col-lg-2" id="sidebar" style="width:100%;background-color:orangered">
 
-        <div class="mart_10">
+        <div style="margin-top:10px; ">
           <!--Hidden Content visible on Hover-->
 
 
-          <div class="container-fluid content"  href="#" >
+          <div class="container-fluid" id="content" href="#" style="width:100%;margin-top:1px;">
             <span id="title">
               <i class="fas fa-bolt"></i>&nbsp;Electrial Components </span>
 
@@ -1026,7 +1029,7 @@
             </div>
 
           </div>
-          <div class="container-fluid content" href="#" >
+          <div class="container-fluid" id="content" href="#" style="width:100%;margin-top:1px;">
             <span id="title">
               <i class="fas fa-industry"></i>&nbsp;Industrial Machines </span>
 
@@ -1207,7 +1210,7 @@
 
 
 
-          <div class="container-fluid content" href="#" >
+          <div class="container-fluid" id="content" href="#" style="width:100%;margin-top:1px;">
             <span id="title">
               <i class="fas fa-industry"></i>&nbsp;Industrial Machines </span>
 
@@ -1407,7 +1410,7 @@
             </div>
 
           </div>
-          <div class="container-fluid content" href="#" >
+          <div class="container-fluid" id="content" href="#" style="width:100%;margin-top:1px;">
             <span id="title">
               <i class="fas fa-industry"></i>&nbsp;Industrial Machines </span>
 
@@ -1608,7 +1611,7 @@
 
           </div>
 
-          <div class="container-fluid content"  href="#">
+          <div class="container-fluid" id="content" href="#" style="width:100%;margin-top:1px;">
             <span id="title">
               <i class="fas fa-industry"></i>&nbsp;Industrial Machines </span>
 
@@ -1845,18 +1848,19 @@
         </div>
   
       </div> -->
-      <div id="productsofday" class="col-lg-10 scrollmenu  mart_10" >
+      <div id="productsofday" class="col-lg-10 scrollmenu  " style="margin-top:10px">
         <h3>Products of The Day</h3>
+
         <i id="right" class="fas fa-angle-left fa-3x moveleft " (click)="slideleft()"></i>
 
-        <a *ngFor="let i of data" id="pod_a">
+        <a *ngFor="let i of data" style="color:white; width:200px;">
 
 
 
-          <img class="card-img-top" src="{{i['image']}}" id="pod_img" alt="Card image cap">
+          <img class="card-img-top" src="{{i['image']}}" style="height:150px;width:130px" alt="Card image cap">
 
-          <ul id="pod_ul">
-            <div id="pod_div"> By :{{i['name']}} </div>
+          <ul style="color:black" style="width:80px">
+            <div style="width: fit-content;color:black"> By :{{i['name']}} </div>
 
 
             <button class="btn btn-outline-primary"> Get Quote</button>
@@ -1881,13 +1885,13 @@
   <div class="container-fluid">
     <div class="row">
 
-      <div id="sidebar" class="col-lg-2 sidebar_ex" >
+      <div id="sidebar" class="col-lg-2" style="width:100%;background-color:orangered">
 
         <div>
           <!--Hidden Content visible on Hover-->
 
 
-          <div class="container-fluid content" href="#">
+          <div class="container-fluid" id="content" href="#" style="width:100%;margin-top:1px;">
             <span id="title">
               <i class="fas fa-bolt"></i>&nbsp;Electrial Components </span>
 
@@ -1979,7 +1983,7 @@
             </div>
 
           </div>
-          <div class="container-fluid content"  href="#">
+          <div class="container-fluid" id="content" href="#" style="width:100%;margin-top:1px;">
             <span id="title">
               <i class="fas fa-industry"></i>&nbsp;Industrial Machines </span>
 
@@ -2160,7 +2164,7 @@
 
 
 
-          <div class="container-fluid content"  href="#" >
+          <div class="container-fluid" id="content" href="#" style="width:100%;margin-top:1px;">
             <span id="title">
               <i class="fas fa-industry"></i>&nbsp;Industrial Machines </span>
 
@@ -2360,7 +2364,7 @@
             </div>
 
           </div>
-          <div class="container-fluid content"  href="#" >
+          <div class="container-fluid" id="content" href="#" style="width:100%;margin-top:1px;">
             <span id="title">
               <i class="fas fa-industry"></i>&nbsp;Industrial Machines </span>
 
@@ -2561,7 +2565,7 @@
 
           </div>
 
-          <div class="container-fluid content"  href="#">
+          <div class="container-fluid" id="content" href="#" style="width:100%;margin-top:1px;">
             <span id="title">
               <i class="fas fa-industry"></i>&nbsp;Industrial Machines </span>
 
@@ -2780,12 +2784,12 @@
 
       </div>
 
-      <div class="col-lg-10 scrollmenu city_cont" >
+      <div class="col-lg-10 scrollmenu  " style="margin-top:10px;border: 1px solid lightgrey;">
 
 
-        <a *ngFor="let i of cities" class="city_a" href="{{i}}">
+        <a *ngFor="let i of cities" style=" width:200px;" href="{{i}}">
 
-          <img src="    https://hm.imimg.com/imhome_gifs/cctv-camera.jpg" id="img1">
+          <img src="    https://hm.imimg.com/imhome_gifs/cctv-camera.jpg" style="height: 100px">
 
           <!-- <div style="border-radius:50px;background-color:rgb(231, 220, 220);" >
                       <img style="border-radius:50px;max-width:100%;height: 100px;" src="https://cdn3.iconfinder.com/data/icons/landmarks-line-vol-1/512/delhi__state__Landmark__building__capital__monument__architecture-512.png">
@@ -2807,18 +2811,18 @@
 
 
   <!--Cities-->
-  <div class="col-lg-12 scrollmenu city_cont "  >
-    <h4 id="city_h4">Search
+  <div class="col-lg-12 scrollmenu  " style="margin-top:10px;border: 1px solid lightgrey;">
+    <h4 style="border-radius: 10px;position:relative;position: absolute;top:0;background-color:black;color: white;width:200px">Search
       By Region </h4>
 
 
-    <a *ngFor="let i of cities" class="city_a" href="{{i}}">
+    <a *ngFor="let i of cities" style=" width:200px;" href="{{i}}">
 
 
 
-      <div id="city_div1">
-        <img id="city_img" src="https://cdn3.iconfinder.com/data/icons/landmarks-line-vol-1/512/delhi__state__Landmark__building__capital__monument__architecture-512.png">
-        <div id="city_div2" >{{i}}</div>
+      <div style="border-radius:50px;background-color:rgb(231, 220, 220);height: 110;">
+        <img style="border-radius:50px;max-width:100%;height: 100px;" src="https://cdn3.iconfinder.com/data/icons/landmarks-line-vol-1/512/delhi__state__Landmark__building__capital__monument__architecture-512.png">
+        <div style="text-align: unset;">{{i}}</div>
 
       </div>
 
@@ -2832,9 +2836,9 @@
 
   <!--Need Posting-->
 
-  <div class="container-fluid" id="post_cont">
-    <h3 class="center" >Post Your Need</h3>
-    <div class="row center" >
+  <div class="container-fluid" style="height: fit-content;color:white;margin-top:20px;background-color: darkblue">
+    <h3 style="text-align: center">Post Your Need</h3>
+    <div class="row" style="text-align:center">
       <div class="col-lg-4 col-sm-4"> Post Your Requirement <i class="fas fa-arrow-right"></i>
         <div><i class="fas fa-clipboard"></i></div>
       </div>
@@ -2844,8 +2848,8 @@
       <div class="col-lg-4 col-sm-4">Settle your Deal<div><i class="fas fa-handshake"></i></div>
       </div>
 
-      <div class="container-fluid marb_10" >
-        <input (click)="form=true" aria-label="Search" class=" col-lg-6 form-control " placeholder="Search" id="post_input"
+      <div class="container-fluid" style="margin-bottom: 10px">
+        <input (click)="form=true" aria-label="Search" class=" col-lg-6 form-control " placeholder="Search" style="width:100;margin: auto"
           type="search">
       </div>
 
@@ -2861,18 +2865,18 @@
   <form *ngIf="form">
     <div class="container">
       <div class="row">
-        <div id="form_div1"><i class="fas fa-arrow-left " (click)="form=false"></i></div>
-        <div id="form_div2">
+        <div style="width:10%"><i class="fas fa-arrow-left " (click)="form=false"></i></div>
+        <div style="width:70%">
           <input (keyup)="keyup($event)" [(ngModel)]="input" name="input" class="form-control" placeholder="Search"
             type="search">
         </div>
-        <div id="form_div3"> <i class="fas fa-times " (click)="clearinput()"></i></div>
+        <div style="width:20%" style=" margin:auto"> <i class="fas fa-times " (click)="clearinput()"></i></div>
 
       </div>
-      <div class="row mart_10">
-        <div id="form_div4" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 "
+      <div class="row" style="margin-top:10px ;">
+        <div style="border:2px solid rgb(123, 123, 236);height:50px;margin-left:25%" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 "
           *ngFor="let j of search">
-          <div><i class="fas fa-vials"> </i><span id="form_span">{{j}}</span></div>
+          <div><i class="fas fa-vials"> </i><span style="max-width:100%">{{j}}</span></div>
         </div>
 
       </div>
@@ -2893,7 +2897,7 @@
   <!-- Footer -->
   <footer class="page-footer font-small blue-grey lighten-5">
 
-    <div id="footer_div1">
+    <div style="background-color: #21d192;">
       <div class="container">
 
         <!-- Grid row-->
@@ -2949,7 +2953,7 @@
 
           <!-- Content -->
           <h6 class="text-uppercase font-weight-bold">Company name</h6>
-          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto width_60" >
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet,
             consectetur
             adipisicing elit.</p>
@@ -2962,7 +2966,7 @@
 
           <!-- Links -->
           <h6 class="text-uppercase font-weight-bold">Products</h6>
-          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto width_60" >
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
             <a class="dark-grey-text" href="#!">MDBootstrap</a>
           </p>
@@ -2984,7 +2988,7 @@
 
           <!-- Links -->
           <h6 class="text-uppercase font-weight-bold">Useful links</h6>
-          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto width_60" >
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
             <a class="dark-grey-text" href="#!">Your Account</a>
           </p>
@@ -3006,7 +3010,7 @@
 
           <!-- Links -->
           <h6 class="text-uppercase font-weight-bold">Contact</h6>
-          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto width_60" >
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
             <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
           <p>
