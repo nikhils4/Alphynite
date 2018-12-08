@@ -1,7 +1,42 @@
 
+#sidebar {
+  width:100%;
+  background-color:rgb(16, 16, 46)
+}
 
+#post_cont {
+  height: fit-content;
+  color:white;
+  margin-top:20px;
+  background-color: darkblue
+}
 
+.center {
+  text-align: center;
+}
 
+#sidebar_div {
+  margin-top:150px;
+}
+#pod_a {
+  color:white;
+  width:200px
+}
+
+#pod_img {
+  height:150px;
+  width:130px
+}
+
+#pod_ul {
+  width: 80px;
+  color: black;
+}
+
+#pod_div {
+  width: fit-content;
+  color:black
+}
 #main
 {
 
@@ -20,11 +55,46 @@ div{
    color:white;
 }
 
+#top_content {
+  width:100%;
+  margin-top:1px;
+  border-top-right-radius:25px;
+}
+
+#card_cont {
+  margin-top:100px;
+}
+
+.sidebar_ex {
+  width:100%;
+  background-color:orangered
+}
 
 
-#content
+
+#card_a {
+  color:white;
+  width:100%;
+  height:400px
+}
+
+.mart_10 {
+  margin-top: 10px;
+}
+
+.marb_10 {
+  margin-bottom: 10px;
+}
+
+#card_img {
+  height:400px;
+  width:100%;
+}
+
+.content
 {
-    width:100%
+    width:100%;
+  margin-top:1px;
 }
 #content:hover > #title{
 
@@ -46,6 +116,80 @@ color:grey
     border:2px solid greenyellow
 }
 
+.city_cont {
+  margin-top:10px;
+  border: 1px solid lightgrey;
+}
+
+.city_a {
+  width: 200px;
+}
+
+#form_div1 {
+  width: 10%;
+}
+
+#form_div2 {
+  width: 70%;
+}
+
+#form_div3 {
+  width:20%;
+  margin: auto;
+}
+
+#form_span {
+  max-width: 100%;
+}
+
+#form_div4 {
+  border:2px solid rgb(123, 123, 236);
+  height:50px;
+  margin-left:25%
+}
+
+#img1 {
+  height: 100px;
+}
+
+#footer_div1 {
+  background-color: #21d192;
+}
+
+#city_div1 {
+  border-radius:50px;
+  background-color:rgb(231, 220, 220);
+  height: 110px;
+}
+
+#city_img {
+  border-radius:50px;
+  max-width:100%;
+  height: 100px;
+}
+
+#city_div2 {
+  text-align: unset;
+}
+
+.width_60 {
+  width : 60px;
+}
+
+#post_input {
+  width:100px;
+  margin: auto
+}
+
+#city_h4 {
+  border-radius: 10px;
+  position:relative;
+  position: absolute;
+  top:0;
+  background-color:black;
+  color: white;
+  width:200px;
+}
 
 
 
